@@ -1,0 +1,22 @@
+header{
+    height: 10vh;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    width: 100vw;
+    cursor: pointer;
+    box-shadow: 4px 4px 16px rgb(201, 196, 196);
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+span{
+    color: rgb(125, 116, 116);
+    font-weight: 800;
+    font-size: 24px;
+}
+li{
+    font-weight: 800;
+}
+.active{
+    color: red;
+}

@@ -1,0 +1,92 @@
+{
+  "empFromData": [
+    {
+      "id": "1a23",
+      "name": "Alice",
+      "mname": "Marie",
+      "lname": "Smith",
+      "email": "alice.smith@example.com",
+      "phoneNo": 9876543210,
+      "city": "New York",
+      "gender": "female",
+      "dob": "1990-05-15",
+      "department": "Software Engineer",
+      "salary": 80000,
+      "mAadhar": "",
+      "fAadhar": "F123456789012",
+      "skills": [
+        "JavaScript",
+        "Python",
+        "React",
+        "Node.js"
+      ]
+    },
+    {
+      "id": "4b56",
+      "name": "Bob",
+      "mname": "William",
+      "lname": "Johnson",
+      "email": "bob.johnson@example.com",
+      "phoneNo": 9876543211,
+      "city": "Los Angeles",
+      "gender": "male",
+      "dob": "1985-10-20",
+      "department": "Data Analyst",
+      "salary": 70000,
+      "mAadhar": "M234567890123",
+      "fAadhar": "",
+      "skills": [
+        "SQL",
+        "Data Visualization"
+      ]
+    },
+    {
+      "id": "0d34",
+      "name": "Ethan",
+      "mname": "Andrew",
+      "lname": "Martinez",
+      "email": "ethan.martinez@example.com",
+      "phoneNo": 9876543215,
+      "city": "Miami",
+      "gender": "male",
+      "dob": "1983-04-17",
+      "department": "Software Developer",
+      "salary": 95000,
+      "mAadhar": "M456789012345",
+      "fAadhar": "",
+      "skills": [
+        "Java",
+        "JavaScript",
+        "React",
+        "Node.js"
+      ]
+    },
+    {
+      "id": "2a56",
+      "name": "Olivia",
+      "mname": "Mia",
+      "lname": "Brown",
+      "email": "olivia.brown@example.com",
+      "phoneNo": 9876543216,
+      "city": "San Francisco",
+      "gender": "female",
+      "dob": "1995-09-23",
+      "department": "Product Manager",
+      "salary": 95000,
+      "mAadhar": "",
+      "fAadhar": "F456789012345",
+      "skills": [
+        "Product Strategy",
+        "Market Research",
+        "Project Management"
+      ]
+    }
+  ],
+  "adminDetails": [
+    {
+      "email": "patilvaibhav2108@gmail.com",
+      "password": "123",
+      "id": "9224"
+    }
+  ]
+}

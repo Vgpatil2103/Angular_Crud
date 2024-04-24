@@ -1,0 +1,10 @@
+<div class="container d-flex justify-content-center align-items-center">
+    <div class="box p-3 mt-5">
+        <form class="d-flex flex-column p-3 gap-3" [formGroup]="loginForm" (ngSubmit)="validateUser()" >
+            
+            <input class="p-3" formControlName="email"  type="email" name="email" placeholder="Email">
+            <input class="p-3" formControlName="password"   type="password" name="password" placeholder="Password">
+            <button class="p-3 btn btn-success" type="submit">Login</button>
+        </form>
+    </div>
+</div>

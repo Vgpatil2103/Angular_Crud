@@ -1,0 +1,13 @@
+<header class="d-flex justify-content-between align-items-center px-3">
+    <div class="logo">
+        <span>Employee Management System</span>
+    </div>
+    <div class="links">
+        <ul class="d-flex gap-3 mt-3">
+            <li routerLink="/login" routerLinkActive="active">Login</li>
+            <li routerLink="/add-data" routerLinkActive="active">Add Data</li>
+            <li routerLink="/view-data" routerLinkActive="active">View Data</li>
+            <li (click)="logout()">Logout</li>
+        </ul>
+    </div>
+</header>

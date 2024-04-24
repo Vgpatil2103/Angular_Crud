@@ -1,0 +1,134 @@
+<div class="container-fluid">
+    <div class="container p-3">
+        <div class="heading d-flex justify-content-center">
+            <span class="lead">Employee Details</span>
+        </div>
+        <div class="form-container  px-5 p-4">
+           
+            <form [formGroup]="empForm" (ngSubmit)="postData()" class="d-flex flex-column gap-4">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input class="tt" formControlName="name" type="text" name="name" placeholder="Name"
+                            [ngClass]="{'invalid': control['name'].invalid && (control['name'].dirty || control['name'].touched)}">
+                        <small class="text-danger" *ngIf="control['name'].invalid && (control['name'].dirty || control['name'].touched)">
+                            *Name is required
+                        </small>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input [ngClass]="{'invalid':control['mname'].invalid && (control['mname'].dirty||control['mname'].touched)}" class="tt" formControlName="mname" type="text" name="mname" placeholder="MiddleNamee">
+                        <small class="text-danger" *ngIf="control['mname'].invalid && (control['mname'].dirty || control['mname'].touched)">
+                            *Middle Name is required
+                        </small>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input [ngClass]="{'invalid':control['lname'].invalid && (control['lname'].dirty||control['lname'].touched)}" class="tt" formControlName="lname" type="text" name="mname" placeholder="Last Name">
+                        <small class="text-danger" *ngIf="control['lname'].invalid && (control['lname'].dirty || control['lname'].touched)">
+                            *Last Name is required
+                        </small>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input class="tt" formControlName="email" type="email" name="email" placeholder="Email" [ngClass]="{'invalid': control['email'].invalid && (control['email'].dirty || control['email'].touched)}">
+                        <small class="text-danger" *ngIf="control['email'].invalid && (control['email'].dirty || control['email'].touched)">
+                            *Email  is required
+                        </small>
+                        <small class="text-danger" *ngIf="control['email'].errors && (control['email'].dirty || control['email'].touched)">
+                            *Invalid email format
+                        </small>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input class="tt" formControlName="phoneNo" type="number" name="phoneNo" placeholder="Phone" [ngClass]="{'invalid': control['phoneNo'].invalid && (control['phoneNo'].dirty || control['phoneNo'].touched)}">
+                        <small class="text-danger" *ngIf="control['phoneNo'].invalid && (control['phoneNo'].dirty || control['phoneNo'].touched)">
+                            *Phone Number is required
+                        </small>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input class="tt" formControlName="city" type="text" name="City" placeholder="City" [ngClass]="{'invalid': control['city'].invalid && (control['city'].dirty || control['city'].touched)}">
+                        <small class="text-danger" *ngIf="control['city'].invalid && (control['city'].dirty || control['city'].touched)" >
+                            *City is required
+                        </small>
+                    </div>
+                </div>
+
+                <div class="gender d-flex gap-1">
+                    <label><b>Gender:</b></label>
+
+                    <input type="radio" formControlName="gender" name="gender" value="male" id="male" [ngClass]="{'invalid': control['gender'].invalid && (control['gender'].dirty || control['gender'].touched)}">
+                    <small class="text-danger" *ngIf="control['gender'].invalid && (control['gender'].dirty || control['gender'].touched)">
+                        *Gender is required
+                    </small>
+                    <label for="male">Male</label>
+                    <input type="radio" formControlName="gender" name="gender" value="female" id="female" [ngClass]="{'invalid': control['gender'].invalid && (control['gender'].dirty || control['gender'].touched)}">
+                    <small class="text-danger" *ngIf="control['gender'].invalid && (control['gender'].dirty || control['gender'].touched)">
+                        *Gneder is required
+                    </small>
+                    <label for="female">Female</label>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input class="tt" formControlName="dob" type="date" name="dob" placeholder="Date of Birth" [ngClass]="{'invalid': control['dob'].invalid && (control['dob'].dirty || control['dob'].touched)}">
+                        <small class="text-danger" *ngIf="control['dob'].invalid && (control['dob'].dirty || control['dob'].touched)">
+                            *DOB is required
+                        </small>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input class="tt" formControlName="department" type="text" name="department"
+                            placeholder="Department" [ngClass]="{'invalid': control['department'].invalid && (control['department'].dirty || control['department'].touched)}">
+                            <small class="text-danger" *ngIf="control['department'].invalid && (control['department'].dirty || control['department'].touched)">
+                                *Department is required
+                            </small>
+                        </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input class="tt" formControlName="salary" type="number" name="salary" placeholder="Salary" [ngClass]="{'invalid': control['salary'].invalid && (control['salary'].dirty || control['salary'].touched)}">
+                        <small class="text-danger" *ngIf="control['salary'].invalid && (control['salary'].dirty || control['salary'].touched)">
+                            *Salary is required
+                        </small>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <input class="tt" formControlName="mAadhar" type="text" name="maleAadhar"
+                            placeholder="Male Adhhar">
+                            <small class="text-danger" *ngIf="control['mAadhar'].invalid && (control['mAadhar'].dirty || control['mAadhar'].touched)">
+                                *It is required
+                            </small>
+                        </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <input class="tt" formControlName="fAadhar" type="text" name="femaleAdhaar"
+                            placeholder="Female Adhhar">
+                            <small class="text-danger" *ngIf="control['fAadhar'].invalid && (control['fAadhar'].dirty || control['fAadhar'].touched)">
+                                *It is required
+                            </small>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div formArrayName="skills" *ngFor="let control of skillarr.controls; let i=index" class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input  [formControlName]="i" class="tt"
+                            type="text" name="skills" placeholder="Skills">
+                           
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <button type="button" (click)="addSkills()" class="tt btn btn-info">Add Skills</button>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <button [disabled]="empForm.invalid" class="tt btn btn-success" type="submit">Add Data</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <button class="tt btn btn-danger" (click)="reset()" type="reset">Reset</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
